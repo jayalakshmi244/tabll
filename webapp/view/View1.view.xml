@@ -1,0 +1,45 @@
+<mvc:View controllerName="pro3.project3.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    
+        <content>
+        <FlexBox id="fl" justifyContent="Center" alignItems="Center">
+    
+        <VBox id="b1">
+        <Label id="un" 
+			text="Username (bold)"
+			labelFor="input-b"
+			design="Bold" />
+		<Input id="input-b"  placeholder="Enter your name" width="100%" />
+
+        </VBox>
+        </FlexBox>
+        <FlexBox id="flex1" justifyContent="Center" alignItems="Center">
+        <VBox id="b3">
+        <Label id="pw"
+			text="Password (bold)"
+			labelFor="input-c"
+			design="Bold" />
+		<Input id="input-c" type="Password" placeholder="Enter your password" width="100%"/>
+
+        </VBox>
+        </FlexBox>
+        <FlexBox id="flex2" justifyContent="Center" alignItems="Center">
+        <Button id="si2" icon="sap-icon://complete"
+                         type="Accept"
+						text="Sign in"
+						press="ondblclick"></Button>
+                        
+        <Button id="su" icon="sap-icon://account"
+                        type="Reject"
+						text="Sign up"
+						press="onPress"></Button>
+                        </FlexBox>
+
+
+	 	
+     </content>
+    
+    </Page>
+</mvc:View>

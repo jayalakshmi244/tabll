@@ -1,0 +1,91 @@
+<mvc:View controllerName="pro3.project3.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+		<Text id="th" text="Registration Page" textAlign="Center"></Text>
+		<ToolbarSpacer  id="tb"/>
+		<FlexBox id="us" justifyContent="Center" alignItems="Center">
+        
+		<HBox id="hb1">
+		<VBox id="vb2">
+        <Label id="un1"
+			text="FirstName (bold)"
+			labelFor="input-d"
+			design="Bold" />
+		<Input id="input-d" placeholder="Enter your name" width="100%"/></VBox>
+		<VBox id="vb3">
+		<Label id="un2"
+			text="LastName (bold)"
+			labelFor="input-dd"
+			design="Bold" />
+		<Input id="input-dd" placeholder="Enter your name" width="100%"/></VBox>
+		</HBox>
+		</FlexBox>
+      <FlexBox id="ph" justifyContent="Center" alignItems="Center">
+	  <HBox id="pho">
+	  <VBox id="phv">
+        <Label id="phn"
+			text="Contact No. (bold)"
+			labelFor="input-d"
+			design="Bold" />
+		<Input id="input-co" type="Number" placeholder="Enter your Contact no" width="100%"/></VBox>
+		<VBox id="mai">
+		<Label id="ma"
+			text="Email id (bold)"
+		    labelFor="input-em"
+			design="Bold" />
+		<Input id="em" type="Email"
+		placeholder="Enter your mail id" width="100%"/></VBox>
+		</HBox>
+		</FlexBox>
+    <FlexBox id="b4" justifyContent="Center" alignItems="Center">
+		<HBox id="doo">
+		<VBox id="dtv">
+        <Label  id="dt" text="Date Of Birth" design="Bold" labelFor="DTI1"/>
+		<DateTimeInput
+			id="DTI1"
+			type="Date"
+			placeholder="Enter your DateOfBirth "
+			class="sapUiSmallMarginBottom" width="100%" /></VBox>
+
+        
+        <VBox id="gn">
+        <Label id="rb1" labelFor="rbg3" text="Gender" />
+		<RadioButtonGroup id="rbg3" columns="5"  class="sapUiMediumMarginBottom">
+			<RadioButton id="RB3-1" text="Male" />
+			<RadioButton id="RB3-2" text="Female" />
+			<RadioButton id="RB3-3" text="Others" />
+		</RadioButtonGroup></VBox>
+		</HBox>
+        </FlexBox>
+        <FlexBox id="ep" justifyContent="Center" alignItems="Center">
+		<HBox id="pws">
+		<VBox id="pwv">
+        <Label id="pw1"
+			text="Enter Password (bold)"
+			labelFor="input-f"
+			design="Bold" />
+		<Input id="input-f" type="Password" placeholder="Enter your password" width="100%"/></VBox>
+
+        
+        <VBox id="cpw">
+        <Label id="cp1"
+			text="Confirm Password (bold)"
+			labelFor="input-g"
+			design="Bold" />
+		<Input id="input-g" type="Password" placeholder="Enter your password" width="100%"/></VBox>
+		</HBox>
+
+        </FlexBox>
+
+        <FlexBox id="regg" justifyContent="Center" alignItems="Center">
+        <Button id="si3" type="Accept"
+						text="Register"
+						press="onPress"></Button>
+						</FlexBox>
+	
+     </content>
+    
+    </Page>
+</mvc:View>

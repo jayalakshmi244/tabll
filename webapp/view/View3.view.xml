@@ -1,0 +1,62 @@
+<mvc:View controllerName="pro3.project3.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+        <!--<Table id="tab">
+        <columns>
+        <Column id="na">
+        <Text id="te1" text="Firstname"></Text>
+        </Column>
+        <Column id="laa">
+        <Text id="ln" text="Lastname"></Text>
+        </Column>
+        <Column id="con">
+        <Text id="con1" text="contact no">
+        </Column>
+        </columns>
+        <Items>
+        <ColumnListItem>
+        <cells>
+        <Text id="te1" text="{TableModel>/firstName}"/>
+        <Text text=""></Text>
+        <Text text=""></Text>
+
+
+        </ColumnListItem>
+
+        </Items>
+        </Table>-->
+        <Table id="dett" items="{det>/dee}">
+    <columns>
+      <Column id="det1"
+        width="12em">
+        <Text id="det2" text="Firstname" />
+      </Column>
+       <Column id="det3"
+        width="12em">
+        <Text id="det4" text="Lastname" />
+      </Column>
+      <Column id="deti"
+       width="12em">
+       <Text id="dettt" text="Contact no" />
+       </Column>
+    </columns>
+
+
+<items>
+      <ColumnListItem id="det5">
+        <cells>
+        <Text id="det7" text="{det>firstName}"></Text>
+        <Text id="det8" text="{det>lastName}"></Text>
+        <Text id="det9" text="{det>contact}"></Text>
+        </cells>
+      </ColumnListItem>
+    </items>
+  </Table>
+
+
+        
+        </content>
+        </Page>
+        </mvc:View>
